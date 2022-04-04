@@ -1,7 +1,9 @@
 package com.company;
+import javasolver.BackTrackingSolver;
 import javasolver.Javasolver;
 import javasolver.PrintSudoku;
 
+import java.util.Arrays;
 
 
 public class Main {
@@ -52,6 +54,7 @@ public class Main {
                 {3,0,2,0,0,0,6,0,0},
                 {1,0,0,0,8,0,0,0,0}
         };
-        PrintSudoku.printSuDoKu(Javasolver.solver(sudoku4));
+        System.out.println((BackTrackingSolver.backTracking(sudoku2)));
+        PrintSudoku.printSuDoKu(sudoku2);
     }
 }
