@@ -10,9 +10,10 @@ public class BackTrackingSolver {
                         if (checker(SuDoKu, x, y)){
                             if (backTracking(SuDoKu))
                                 return true;
-                            SuDoKu[x][y] = 0;
+
                         }
                     }
+                    SuDoKu[x][y] = 0;
                     return false;
                 }
             }
